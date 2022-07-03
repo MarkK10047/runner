@@ -7,6 +7,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="../bootstrap/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="./css/font.css">
+  <link rel="stylesheet" href="./css/slick.css">
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
 <body>
@@ -78,12 +79,31 @@
       <h2>Просто заполните форму заявки<br> 
         и мы перезвоним вам в течении 10 минут</h2>
       <form action="" class="consultation__form">
-        <input type="text" placeholder="Ваше имя">
-        <input type="text" placeholder="Ваше телефон">
-        <input type="text" placeholder="Ваше E-mail">
+        <input name="name" type="text" required placeholder="Ваше имя">
+        <input name="phone" type="number" required placeholder="Ваше телефон">
+        <input name="email" type="email" required placeholder="Ваше E-mail">
         <button class="button">заказать кОНСУЛЬТАЦИЮ</button>
       </form>
     </div>
   </section>
+  <section class="carousel">
+    <div class="container">
+      <div class="carousel__inner">
+        <div class="carousel__item">
+          <img src="img/slider/slide-1.png" alt="slider-1">
+        </div>
+        <div class="carousel__item">
+          <img src="img/slider/slide-2.png" alt="slider-2">
+        </div>
+        <div class="carousel__item">
+          <img src="img/slider/slide-3.png" alt="slider-3">
+        </div>
+      </div>
+    </div>
+  </section>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 </html>
