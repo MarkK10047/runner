@@ -2,25 +2,65 @@
   padding: 81px 0
   &__inner
     margin: 0 auto
+    max-width: 75%
+    position: relative
     .carousel__item
       img
         margin: 0 auto
-        width: 750px
+        max-width: 100%
     .slick-prev
       border: none
-      background: none
-      img
-        width: 31px
-        position: absolute
-        top: 50%
-        transform: translateY(-50%)
-        left: -67px
+      background: url(../img/slider/left-arrow.png) center center/cover no-repeat
+      width: 31px
+      height: 50px
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      left: -66px
+      font-size: 0
     .slick-next
       border: none
-      background: none
-      img
-        width: 31px
-        position: absolute
-        top: 50%
-        transform: translateY(-50%)
-        right: -67px
+      background: url(../img/slider/right-arrow.png) center center/cover no-repeat
+      width: 31px
+      height: 50px
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      right: -66px
+      font-size: 0
+    .slick-dots
+      list-style: none
+      text-align: center
+      position: absolute
+      bottom: -21%
+      left: 50%
+      transform: translateX(-50%)
+      width: 100%
+      li
+        display: inline-block
+        width: 40px
+        height: 40px
+        margin: 0 5px
+        button
+          font-size: 0
+          outline: none
+          width: 20px
+          height: 20px
+          border: 0
+          background-color: transparent
+          position: relative
+          &::before
+            position: absolute
+            content: '•'
+            top: 0
+            left: 0
+            width: 8px
+            height: 8px
+            background-color: #000
+            opacity: 0.25
+            border-radius: 8px
+      .slick-active
+        button
+          &::before
+            opacity: 0.8
+        
